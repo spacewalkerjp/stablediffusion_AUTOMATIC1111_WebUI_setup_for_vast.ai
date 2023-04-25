@@ -69,26 +69,36 @@ cd ~/stable-diffusion-webui/
 ```
 
 # how to install checkpoint model
+
+execute as user1
 ```sh
 wget -P /home/user1/stable-diffusion-webui/models/Stable-diffusion/ http://example.com/HogeHogeModel.safetensors
 ```
 
 # how to install VAE
+
+execute as user1
 ```sh
 wget -P /home/user1/stable-diffusion-webui/models/VAE/ http://example.com/vae-ft-mse-840000-ema-pruned.safetensors
 ```
 
 # how to install LoRA 
+
+execute as user1
 ```sh
 wget -P /home/user1/stable-diffusion-webui/models/Lora/ http://example.com/HogeHogeLora.safetensors
 ```
 
 # how to install embeddings
+
+execute as user1
 ```sh
 wget -P /home/user1/stable-diffusion-webui/embeddings/ http://example.com/EasyNegative.safetensors
 ```
 
 # Download the outputs from the instance to local PC.
+
+execute from your Local PC's terminal
 ```sh
 scp -r -P XXXXX root@AAA.BBB.CCC.DDD:/home/user1/stable-diffusion-webui/outputs ./outputs/
 ```
