@@ -27,3 +27,5 @@ ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080
 ```sh
 ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080 -L 7860:localhost:7860
 ```
+5. Connect the vast.ai instance via SSH
+6. 
