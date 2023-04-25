@@ -20,12 +20,12 @@
 3. Push the `>_ CONNECT` button and copy the `Direct ssh connect` command.
 * ex) 
 ```sh
-ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080
+ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 8080:localhost:8080
 ```
 4. Paste the command into your terminal/command prompt and add `-L 7860:localhost:7860` for browser access (SSH local port fowarding)
 * ex)
 ```sh
-ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080 -L 7860:localhost:7860
+ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 8080:localhost:8080 -L 7860:localhost:7860
 ```
 5. Connect the instance via SSH with the above `4.` ssh command.
 6. Install the AUTOMATIC1111 / stable-diffusion-webui with PyTorch 2.0.0 as follows.
@@ -55,6 +55,7 @@ chmod +x webui.sh
 
 7.Access the stable diffusion by your local PC's web browser
    * http://localhost:7860
+
 
 # how to terminate stable diffusion and restart
 * terminate : `Ctrl + C`
@@ -86,3 +87,9 @@ wget -P /home/user1/stable-diffusion-webui/models/Lora/ http://example.com/HogeH
 ```sh
 wget -P /home/user1/stable-diffusion-webui/embeddings/ http://example.com/EasyNegative.safetensors
 ```
+
+# Download the outputs from the instance to local PC.
+```sh
+scp -r -P XXXXX root@AAA.BBB.CCC.DDD:/home/user1/stable-diffusion-webui/outputs ./outputs/
+```
+
