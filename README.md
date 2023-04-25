@@ -29,6 +29,7 @@ ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080 -L 7860:localhost:7860
 ```
 5. Connect the instance via SSH with the above `4.` ssh command.
 6. Install the AUTOMATIC1111 / stable-diffusion-webui with PyTorch 2.0.0 as follows.
+
 6.1 step1 (as ROOT)
 ```sh
 apt-get install vim unzip libgl1-mesa-dev wget git -y
@@ -36,6 +37,7 @@ apt-get install python3 python3-venv -y
 adduser user1 --disabled-password --gecos ""
 su user1
 ```
+
 6.2 step2 (as user1 = not root user)
 ```sh
 cd ~
@@ -50,6 +52,7 @@ cd ~/stable-diffusion-webui/
 chmod +x webui.sh
 ./webui.sh -opt-sdp-attention
 ```
+
 7.Access the stable diffusion by your local PC's web browser
    * http://localhost:7860
 
