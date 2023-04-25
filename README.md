@@ -22,7 +22,7 @@
 ```sh
 ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080
 ```
-4. Paste your terminal the command and add `-L 7860:localhost:7860` for browser access (SSH local port fowarding)
+4. Paste the command into your terminal/command prompt and add `-L 7860:localhost:7860` for browser access (SSH local port fowarding)
 * ex)
 ```sh
 ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080 -L 7860:localhost:7860
