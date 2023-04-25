@@ -15,4 +15,7 @@
    *  #GPUs : `1X` (if the instance has multi GPUs, the current version of Stable Diffusion uses only 1X GPU.) 
 
 # Setup procedures
-1. Starging a instance based on the above `Instance configuration`.
+1. Start a instance based on the above `Instance configuration`.
+2. Wait until the instance loads the docker image and starts up. (5 minutes at the fastest, 20 minutes at the longest)
+3. Push the `>_ CONNECT` button and copy the `Direct ssh connect` command.
+   * ex) ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080
