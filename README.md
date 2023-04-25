@@ -10,3 +10,6 @@
 * Launch mode : 
    * `Run interactive shell server, SSH`. This will allow you to connect and run commands using an SSH client.
    * `Checked` : Use direct SSH connection - faster than proxy, but limited to machines with open ports. Proxy ssh still available as backup.
+* GPU Type :
+   *  Interruptible and On-Demand : both OK
+   *  #GPUs : `1X` (if the instance has multi GPUs, the current version of Stable Diffusion uses only 1X GPU.) 
