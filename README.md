@@ -13,3 +13,6 @@
 * GPU Type :
    *  `Interruptible` and `On-Demand` : both OK
    *  #GPUs : `1X` (if the instance has multi GPUs, the current version of Stable Diffusion uses only 1X GPU.) 
+
+# Setup procedures
+1. Starging a instance based on the above `Instance configuration`.
