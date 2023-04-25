@@ -18,4 +18,12 @@
 1. Start a instance based on the above `Instance configuration`.
 2. Wait until the instance loads the docker image and starts up. (5 minutes at the fastest, 20 minutes at the longest)
 3. Push the `>_ CONNECT` button and copy the `Direct ssh connect` command.
-   * ex) ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080
+* ex) 
+```sh
+ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080
+```
+4. Paste your terminal the command and add `-L 7860:localhost:7860`
+* ex)
+```sh
+ssh -p 40017 root@AAA.BBB.CCC.DDD -L 8080:localhost:8080 -L 7860:localhost:7860
+```
