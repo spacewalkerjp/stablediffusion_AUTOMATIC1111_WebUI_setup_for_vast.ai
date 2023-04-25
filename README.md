@@ -55,6 +55,7 @@ chmod +x webui.sh
 
 7.Access the stable diffusion by your local PC's web browser
    * http://localhost:7860
+   * via SSH port forward by `-L 7860:localhost:7860`
 
 
 # how to terminate stable diffusion and restart
