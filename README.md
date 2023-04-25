@@ -56,10 +56,33 @@ chmod +x webui.sh
 7.Access the stable diffusion by your local PC's web browser
    * http://localhost:7860
 
+# how to terminate stable diffusion and restart
+* terminate : `Ctrl + C`
+* restart : ./webui.sh -opt-sdp-attention
+* restart from SSH connection :
+```sh
+su user1
+cd ~
+cd ~/stable-diffusion-webui/
+./webui.sh -opt-sdp-attention
+```
 
+# how to install checkpoint model
+```sh
+wget -P /home/user1/stable-diffusion-webui/models/Stable-diffusion/ http://example.com/HogeHogeModel.safetensors
+```
 
+# how to install VAE
+```sh
+wget -P /home/user1/stable-diffusion-webui/models/VAE/ http://example.com/vae-ft-mse-840000-ema-pruned.safetensors
+```
 
+# how to install LoRA 
+```sh
+wget -P /home/user1/stable-diffusion-webui/models/Lora/ http://example.com/HogeHogeLora.safetensors
+```
 
-
-
+# how to install embeddings
+```sh
+wget -P /home/user1/stable-diffusion-webui/embeddings/ http://example.com/EasyNegative.safetensors
 ```
