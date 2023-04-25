@@ -1,4 +1,5 @@
 # Setup : `vast.at` Stable Diffusion with PyTorch2.0.0
+* GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
 
 # Instance configuration (25th Apr 2023ver)
 * Image : nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
