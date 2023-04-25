@@ -1,4 +1,4 @@
-# Setup : `vast.at` Stable Diffusion with PyTorch2.0.0
+# Setup : `vast.at` AUTOMATIC1111 / Stable Diffusion WebUI with PyTorch2.0.0
 * GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
 * Setup memo : `2023/04/25 ver`
 
