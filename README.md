@@ -121,7 +121,7 @@ ln -s /home/user1/stable-diffusion-webui/outputs/ ~/public_html/outputs
 * recoonect with port forwarding setting for web server
 ```sh
 ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 8080:localhost:80 -L 7860:localhost:7860
-``
+```
 
 * access from local PC with web browser (via SSH port forwarding)
 * http://localhost:8080/~user1/
