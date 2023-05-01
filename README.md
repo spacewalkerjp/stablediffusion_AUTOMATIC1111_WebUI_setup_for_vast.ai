@@ -25,7 +25,7 @@ ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 8080:localhost:8080
 4. Paste the command into your terminal/command prompt and add `-L 7860:localhost:7860` for browser access (SSH local port fowarding)
 * ex)
 ```sh
-ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 8080:localhost:8080 -L 7860:localhost:7860
+ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 7860:localhost:7860
 ```
 5. Connect the instance via SSH with the above `4.` ssh command.
 6. Install the AUTOMATIC1111 / stable-diffusion-webui with PyTorch 2.0.0 as follows.
@@ -103,6 +103,31 @@ Execute from your Local PC's terminal
 ```sh
 scp -r -P XXXXX root@AAA.BBB.CCC.DDD:/home/user1/stable-diffusion-webui/outputs ./outputs/
 ```
+
+# (Option) Apache2 for output directory
+* as a root user
+```sh
+apt install apache2 -y
+a2enmod userdir
+/etc/init.d/apache2 restart
+su user1
+cd
+mkdir ~/public_html
+chmod 711 $HOME
+chmod 755 ~/public_html
+ln -s /home/user1/stable-diffusion-webui/outputs/ ~/public_html/outputs
+```
+
+* recoonect with port forwarding setting for web server
+```sh
+ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 8080:localhost:80 -L 7860:localhost:7860
+``
+
+* access from local PC with web browser (via SSH port forwarding)
+* http://localhost:8080/~user1/
+
+
+
 
 # Ref. ( &Special thanks)
 * https://cloud.vast.ai
