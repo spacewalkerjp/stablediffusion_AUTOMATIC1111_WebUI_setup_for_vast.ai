@@ -1,6 +1,6 @@
 # Setup : `vast.at` AUTOMATIC1111 / Stable Diffusion WebUI with PyTorch2.0.0
 * GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
-* Setup memo : `2023/04/25 ver`
+* Setup memo : `2023/05/01 ver` for AUTOMATIC1111/stable-diffusion-webui 1.1.0(2023/05/01)
 
 # Instance configuration
 * Image : `nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04`
@@ -28,7 +28,7 @@ ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 8080:localhost:8080
 ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 7860:localhost:7860
 ```
 5. Connect the instance via SSH with the above `4.` ssh command.
-6. Install the AUTOMATIC1111 / stable-diffusion-webui with PyTorch 2.0.0 as follows.
+6. Install the AUTOMATIC1111 / stable-diffusion-webui (v1.1.0)
 
 6.1 step1 (as ROOT)
 ```sh
@@ -41,10 +41,11 @@ su user1
 6.2 step2 (as user1 = not root user)
 ```sh
 cd ~
-
-export TORCH_COMMAND="pip install torch==2.0.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu118"
 bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
 
+# after launch, once terminate the webui with `ctrl+c`
+
+# important symbolic link!!
 cd ~/stable-diffusion-webui/venv/lib/python3.10/site-packages/torch/lib
 ln -s libnvrtc-672ee683.so.11.2 libnvrtc.so
 cd ~/stable-diffusion-webui/
