@@ -3,10 +3,10 @@
 * Setup memo : `2023/05/01 ver` for AUTOMATIC1111/stable-diffusion-webui 1.1.0(2023/05/01)
 
 # Preparation
-* 1) LocalPC SSH client setting. Generate a SSH keypair for remote access.
-* 2) Create a new account for vast.ai `Client account type`.
-* 3) Regist your SSH public key into vast.ai `Account` menu.
-* 4) Add credit 10 USD with your credit card on `Billing` menu.
+1) LocalPC SSH client setting. Generate a SSH keypair for remote access.
+2) Create a new account for vast.ai `Client account type`.
+3) Regist your SSH public key into vast.ai `Account` menu.
+4) Add credit 10 USD with your credit card on `Billing` menu.
 
 # GPU Instance configuration
 * Base docker image : `nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04`
