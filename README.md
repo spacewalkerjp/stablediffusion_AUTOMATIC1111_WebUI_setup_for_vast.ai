@@ -4,9 +4,9 @@
 
 # Preparation
 1) Setup your local PC(Windows, macOS, Linux,...)'s SSH client setting. Generate a `SSH keypair(private key & public key)` for remote access.
-2) Create a new account for vast.ai `Client account type`.
+2) Create a new account for vast.ai `Client Account Type`.
 3) Regist your SSH public key into vast.ai `Account` menu.
-4) Add credit 10 USD with your credit card on `Billing` menu.
+4) Add credit 10 USD with your credit card on `Billing` menu. I DON'T recommend `Auto charge` setting.
 
 # GPU Instance configuration
 * Base docker image : `nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04`
