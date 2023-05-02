@@ -51,7 +51,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusio
 
 # after launch, once terminate the webui with `ctrl+c`
 
-# important symbolic link!!
+# important symbolic link for generating images (2023/05/02 ver : python3.10 env)
 cd ~/stable-diffusion-webui/venv/lib/python3.10/site-packages/torch/lib
 ln -s libnvrtc-672ee683.so.11.2 libnvrtc.so
 cd ~/stable-diffusion-webui/
