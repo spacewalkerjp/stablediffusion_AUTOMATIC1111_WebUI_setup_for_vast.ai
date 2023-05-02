@@ -56,8 +56,11 @@ cd ~/stable-diffusion-webui/venv/lib/python3.10/site-packages/torch/lib
 ln -s libnvrtc-672ee683.so.11.2 libnvrtc.so
 cd ~/stable-diffusion-webui/
 
-chmod +x webui.sh
-./webui.sh -opt-sdp-attention
+# launch AUTOMATIC1111 WebUI
+./webui.sh
+
+# can add options
+# ./webui.sh -opt-sdp-attention --opt-sdp-no-mem-attention --api
 ```
 
 7.Access the stable diffusion by your local PC's web browser
@@ -66,14 +69,14 @@ chmod +x webui.sh
 
 
 # how to terminate stable diffusion and restart
-* terminate : `Ctrl + C`
-* restart : ./webui.sh -opt-sdp-attention
-* restart from SSH connection :
+* terminate by `Ctrl + C`
+* restart : ./webui.sh
+## restart from SSH connection :
 ```sh
 su user1
 cd ~
 cd ~/stable-diffusion-webui/
-./webui.sh -opt-sdp-attention
+./webui.sh
 ```
 
 # how to install checkpoint model
@@ -118,11 +121,14 @@ apt install apache2 -y
 a2enmod userdir
 /etc/init.d/apache2 restart
 su user1
+```
+` as a `user1` user
+```sh
 cd
 mkdir ~/public_html
 chmod 711 $HOME
 chmod 755 ~/public_html
-ln -s /home/user1/stable-diffusion-webui/outputs/ ~/public_html/outputs
+ln -s ~/stable-diffusion-webui/outputs/ ~/public_html/outputs
 ```
 
 * recoonect with port forwarding setting for web server
