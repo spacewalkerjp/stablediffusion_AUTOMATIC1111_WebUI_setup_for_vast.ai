@@ -60,7 +60,7 @@ cd ~/stable-diffusion-webui/
 ./webui.sh
 
 # can add options
-# ./webui.sh -opt-sdp-attention --opt-sdp-no-mem-attention --api
+# ./webui.sh --opt-sdp-attention --opt-sdp-no-mem-attention --api
 ```
 
 7.Access the stable diffusion by your local PC's web browser
