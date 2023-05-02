@@ -122,7 +122,7 @@ a2enmod userdir
 /etc/init.d/apache2 restart
 su user1
 ```
-` as a `user1` user
+* as a `user1` user
 ```sh
 cd
 mkdir ~/public_html
