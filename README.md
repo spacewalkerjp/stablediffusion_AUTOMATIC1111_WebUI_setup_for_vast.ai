@@ -1,6 +1,7 @@
 # Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.1.0 (torch2.0.0) for vast.ai
 * GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
 * Setup memo : `2023/05/01 ver` for AUTOMATIC1111/stable-diffusion-webui 1.1.0(2023/05/01)
+* Video explaining in Japanese (Youtube) : https://www.youtube.com/watch?v=U4HrpzkinP4
 
 # Preparation
 1) Setup your local PC(Windows, macOS, Linux,...)'s SSH client setting. Generate a `SSH keypair(private key & public key)` for remote access.
