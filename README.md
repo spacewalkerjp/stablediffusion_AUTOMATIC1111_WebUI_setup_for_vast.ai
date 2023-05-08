@@ -39,7 +39,7 @@ ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 7860:localhost:7860
 
 6.1 step1 (as ROOT)
 ```sh
-apt-get install vim unzip libgl1-mesa-dev wget git -y
+apt-get install vim unzip libgl1-mesa-dev libcairo2-dev wget git -y
 apt-get install python3 python3-venv -y
 adduser user1 --disabled-password --gecos ""
 su user1
