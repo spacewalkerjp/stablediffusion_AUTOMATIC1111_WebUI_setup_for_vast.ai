@@ -1,6 +1,6 @@
 # Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.1.0 (torch2.0.0) for vast.ai
 * GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
-* Setup memo : `2023/05/01 ver` for AUTOMATIC1111/stable-diffusion-webui 1.1.0(2023/05/01)
+* Setup memo : `2023/05/15 ver` for AUTOMATIC1111/stable-diffusion-webui 1.2.0(2023/05/13)
 * Video explaining in Japanese (Youtube) : https://www.youtube.com/watch?v=U4HrpzkinP4
 
 # Preparation
@@ -13,7 +13,7 @@
 * Base docker image : `nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04`
 * Launch Type: `ssh`
 * On-start script: `Not set`
-* Disk Space To Allocate: `over ~50GB` (recommend)
+* Disk Space To Allocate: `over ~60GB` (recommend)
 * Launch mode : 
    * `Run interactive shell server, SSH`. This will allow you to connect and run commands using an SSH client.
    * `Checked` : Use direct SSH connection - faster than proxy, but limited to machines with open ports. Proxy ssh still available as backup.
@@ -62,7 +62,6 @@ cd ~/stable-diffusion-webui/
 
 # can add options
 # ./webui.sh --opt-sdp-attention --opt-sdp-no-mem-attention --api
-# ./webui.sh --xformers
 ```
 
 7.Access the stable diffusion by your local PC's web browser
@@ -117,7 +116,7 @@ scp -r -P XXXXX root@AAA.BBB.CCC.DDD:/home/user1/stable-diffusion-webui/outputs 
 ```
 
 # (Option) xformers
-
+## 2023/05/15: AUTOMATIC1111 v1.2 can't handle xformers
 Once launch WebUI with `--xformers` args. then update xformers by PIP
 ```sh
 ./webui.sh --xformers
