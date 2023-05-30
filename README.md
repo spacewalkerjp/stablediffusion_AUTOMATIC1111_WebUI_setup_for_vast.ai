@@ -1,6 +1,6 @@
-# Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.1.0 (torch2.0.0) for vast.ai
+# Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.3.0 for vast.ai
 * GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
-* Setup memo : `2023/05/15 ver` for AUTOMATIC1111/stable-diffusion-webui 1.2.0(2023/05/13)
+* Setup memo : `2023/05/31 ver` for AUTOMATIC1111/stable-diffusion-webui 1.3.0(2023/05/31)
 * Video explaining in Japanese (Youtube) : https://www.youtube.com/watch?v=U4HrpzkinP4
 
 # Preparation
