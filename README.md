@@ -116,7 +116,7 @@ scp -r -P XXXXX root@AAA.BBB.CCC.DDD:/home/user1/stable-diffusion-webui/outputs 
 ```
 
 # (Option) xformers
-## 2023/05/15: AUTOMATIC1111 v1.2 can't handle xformers
+## 2023/05/31: AUTOMATIC1111 v1.3 can handle xformers
 Once launch WebUI with `--xformers` args. then update xformers by PIP
 ```sh
 ./webui.sh --xformers
