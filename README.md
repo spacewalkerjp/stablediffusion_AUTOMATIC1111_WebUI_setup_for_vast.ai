@@ -176,7 +176,8 @@ cd ~/stable-diffusion-webui/
 * [7] access the two webui with 2 browser
    * http://127.0.0.1:7860
    * http://127.0.0.1:7861
-
+* [8] change save directory name
+   * Settings -> `Saving to a directory` -> change the name of `Directory name pattern` from `[data]` to `0_[date]` for GPU0 / `1_[date]` for GPU1
 
 # Ref. ( &Special thanks)
 * https://cloud.vast.ai
