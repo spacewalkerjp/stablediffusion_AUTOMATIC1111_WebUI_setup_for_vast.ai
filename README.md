@@ -153,7 +153,29 @@ ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 8080:localhost:80 -L 7860:localhost:7860
 * access from local PC with web browser (via SSH port forwarding)
 * http://localhost:8080/~user1/
 
-
+# (Additional info) Multi GPU settings
+* [1] start a instance which has 2 multi GPUs in vast.ai
+* [2] connect the instance with SSH port forward
+```sh
+ssh -p XXXXX root@AAA.BBB.CCC.DDD -L 7860:localhost:7860 -L 7861:localhost:7861
+```
+* [3] start AUTOMATIC1111 webui. (1st time) and stop it.
+* [4] clone configfile
+```sh
+cd ~/stable-diffusion-webui/
+cp ui-config.json ui-config2.json
+cp webui.sh webui2.sh
+```
+* [5] edit ui-config2.json
+* [6] start two `webui`s with `&`
+```sh
+cd ~/stable-diffusion-webui/
+./webui.sh --device-id 0 --listen --port 7860 --xformers --ui-settings-file ui-config.json &
+./webui2.sh --device-id 1 --listen --port 7861 --xformers --ui-settings-file ui-config2.json &
+```
+* [7] access the two webui with 2 browser
+   * http://127.0.0.1:7860
+   * http://127.0.0.1:7861
 
 
 # Ref. ( &Special thanks)
