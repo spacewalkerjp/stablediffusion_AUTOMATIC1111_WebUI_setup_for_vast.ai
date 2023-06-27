@@ -115,20 +115,6 @@ Execute from your Local PC's terminal
 ```sh
 scp -r -P XXXXX root@AAA.BBB.CCC.DDD:/home/user1/stable-diffusion-webui/outputs ./outputs/
 ```
-
-# (Option) xformers
-## 2023/05/31: AUTOMATIC1111 v1.3 can handle xformers
-Once launch WebUI with `--xformers` args. then update xformers by PIP
-```sh
-./webui.sh --xformers
-# terminate (Ctrl-C)
-source venv/bin/activate
-pip install -U xformers
-deactivate
-./webui.sh --xformers
-```
-
-
 # (Option) Apache2 for output directory
 * as a root user
 ```sh
