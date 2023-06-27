@@ -53,15 +53,16 @@ bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusio
 # after launch, once terminate the webui with `ctrl+c`
 
 # important symbolic link for generating images (2023/05/02 ver : python3.10 env)
-cd ~/stable-diffusion-webui/venv/lib/python3.10/site-packages/torch/lib
-ln -s libnvrtc-672ee683.so.11.2 libnvrtc.so
-cd ~/stable-diffusion-webui/
+# (2023/06/28) this symbolic link is not needed for AUTOMATIC1111 v1.4
+#cd ~/stable-diffusion-webui/venv/lib/python3.10/site-packages/torch/lib
+#ln -s libnvrtc-672ee683.so.11.2 libnvrtc.so
+#cd ~/stable-diffusion-webui/
 
-# launch AUTOMATIC1111 WebUI
-./webui.sh
+# launch AUTOMATIC1111 WebUI (with xformers)
+./webui.sh --xformers
 
-# can add options
-# ./webui.sh --opt-sdp-attention --opt-sdp-no-mem-attention --api
+# can add options (with API)
+# ./webui.sh  --api
 ```
 
 7.Access the stable diffusion by your local PC's web browser
