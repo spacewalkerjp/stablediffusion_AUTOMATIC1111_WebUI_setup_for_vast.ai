@@ -1,6 +1,6 @@
-# Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.4.0 for vast.ai
+# Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.5.0 for vast.ai (including SDXL 1.0)
 * GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
-* Setup memo : `2023/06/27 ver` for AUTOMATIC1111/stable-diffusion-webui 1.4.0(2023/06/27)
+* Setup memo : `2023/07/27 ver` for AUTOMATIC1111/stable-diffusion-webui 1.5.0(2023/07/27)
 * Video explaining in Japanese (Youtube) : https://www.youtube.com/watch?v=U4HrpzkinP4
 
 # Preparation
@@ -53,7 +53,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusio
 # after launch, once terminate the webui with `ctrl+c`
 
 # important symbolic link for generating images (2023/05/02 ver : python3.10 env)
-# (2023/06/28) this symbolic link is not needed for AUTOMATIC1111 v1.4
+# (2023/07/27) this symbolic link is not needed for AUTOMATIC1111 v1.5
 #cd ~/stable-diffusion-webui/venv/lib/python3.10/site-packages/torch/lib
 #ln -s libnvrtc-672ee683.so.11.2 libnvrtc.so
 #cd ~/stable-diffusion-webui/
