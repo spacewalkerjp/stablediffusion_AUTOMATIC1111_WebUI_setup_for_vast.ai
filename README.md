@@ -49,7 +49,7 @@ su user1
 ```sh
 cd ~
 bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
-cd ~/stable-diffusion-webui/
+cd stable-diffusion-webui/
 
 # launch AUTOMATIC1111 WebUI (with xformers)
 ./webui.sh --xformers
