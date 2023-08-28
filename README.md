@@ -83,6 +83,7 @@ wget -P /home/user1/stable-diffusion-webui/models/Stable-diffusion/ http://examp
 * SDXL 1.0 (base + refiner)
 ```sh
 wget -P /home/user1/stable-diffusion-webui/models/Stable-diffusion/ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
+wget -P /home/user1/stable-diffusion-webui/models/Stable-diffusion/ https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors
 ```
 
 # how to install VAE
@@ -90,6 +91,10 @@ wget -P /home/user1/stable-diffusion-webui/models/Stable-diffusion/ https://hugg
 Execute as user1
 ```sh
 wget -P /home/user1/stable-diffusion-webui/models/VAE/ http://example.com/vae-ft-mse-840000-ema-pruned.safetensors
+```
+* SDXL 1.0 (base + refiner)
+```sh
+wget -P /home/user1/stable-diffusion-webui/models/VAE/ https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors
 ```
 
 # how to install LoRA 
