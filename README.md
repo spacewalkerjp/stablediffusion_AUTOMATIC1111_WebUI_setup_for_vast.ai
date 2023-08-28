@@ -92,7 +92,7 @@ Execute as user1
 ```sh
 wget -P /home/user1/stable-diffusion-webui/models/VAE/ http://example.com/vae-ft-mse-840000-ema-pruned.safetensors
 ```
-* SDXL 1.0 (base + refiner)
+* SDXL 1.0 VAE
 ```sh
 wget -P /home/user1/stable-diffusion-webui/models/VAE/ https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors
 ```
