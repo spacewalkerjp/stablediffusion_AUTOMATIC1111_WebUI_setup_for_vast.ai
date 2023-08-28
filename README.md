@@ -1,3 +1,5 @@
+# Sorry! this ver 1.6.0-RC version is not available (operational). I'll update after releasing the official ver 1.6.0.
+
 # Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.6.0-RC for vast.ai (including SDXL 1.0)
 * GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
 * Setup memo : `2023/08/28 ver` for AUTOMATIC1111/stable-diffusion-webui 1.6.0-RC
