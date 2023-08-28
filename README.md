@@ -80,6 +80,11 @@ Execute as user1
 wget -P /home/user1/stable-diffusion-webui/models/Stable-diffusion/ http://example.com/HogeHogeModel.safetensors
 ```
 
+* SDXL 1.0 (base + refiner)
+```sh
+wget -P /home/user1/stable-diffusion-webui/models/Stable-diffusion/ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
+```
+
 # how to install VAE
 
 Execute as user1
