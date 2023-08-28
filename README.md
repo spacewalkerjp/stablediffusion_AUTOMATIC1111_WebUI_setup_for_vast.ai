@@ -53,7 +53,7 @@ wget https://github.com/AUTOMATIC1111/stable-diffusion-webui/archive/refs/tags/v
 tar xvfz v1.6.0-RC.tar.gz
 ln -s stable-diffusion-webui-1.6.0-RC stable-diffusion-webui
 cd stable-diffusion-webui/
-# launch AUTOMATIC1111 WebUI (with xformers)
+# Install and launch AUTOMATIC1111 WebUI (with xformers)
 ./webui.sh --xformers
 ```
 
