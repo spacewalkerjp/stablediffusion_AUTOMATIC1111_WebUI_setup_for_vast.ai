@@ -48,9 +48,11 @@ su user1
 6.2 step2 (as user1 = not root user)
 ```sh
 cd ~
-bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+#bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+wget https://github.com/AUTOMATIC1111/stable-diffusion-webui/archive/refs/tags/v1.6.0-RC.tar.gz
+tar xvfz v1.6.0-RC.tar.gz
+mv stable-diffusion-webui-1.6.0-RC/ stable-diffusion-webui/
 cd stable-diffusion-webui/
-
 # launch AUTOMATIC1111 WebUI (with xformers)
 ./webui.sh --xformers
 ```
