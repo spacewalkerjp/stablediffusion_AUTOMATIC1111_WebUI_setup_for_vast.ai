@@ -1,6 +1,6 @@
-# Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.6.0-RC for vast.ai
+# Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.6.0 for vast.ai
 * GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
-* Setup memo : `2023/08/30 ver` for AUTOMATIC1111/stable-diffusion-webui 1.6.0-RC
+* Setup memo : `2023/09/01 ver` for AUTOMATIC1111/stable-diffusion-webui 1.6.0
 * Video explaining in Japanese (Youtube) : https://www.youtube.com/watch?v=U4HrpzkinP4
 
 # Preparation
@@ -50,7 +50,6 @@ su user1
 cd ~
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 cd stable-diffusion-webui
-git switch release_candidate
 # Install and launch AUTOMATIC1111 WebUI (with xformers)
 ./webui.sh --xformers
 ```
