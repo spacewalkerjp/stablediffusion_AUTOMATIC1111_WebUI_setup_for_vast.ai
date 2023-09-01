@@ -61,13 +61,17 @@ cd stable-diffusion-webui
 
 # how to terminate stable diffusion and restart
 * terminate by `Ctrl + C`
-* restart : ./webui.sh
+* restart :
+```sh
+./webui.sh --xformers
+```
+
 ## restart from SSH connection :
 ```sh
 su user1
 cd ~
 cd ~/stable-diffusion-webui/
-./webui.sh
+./webui.sh --xformers
 ```
 
 # how to install checkpoint model
