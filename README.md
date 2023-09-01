@@ -1,6 +1,6 @@
 # Setup : AUTOMATIC1111 / Stable Diffusion WebUI ver 1.6.0 for vast.ai
 * GPU sharing cloud service `Vast.ai` : https://cloud.vast.ai/
-* Setup memo : `2023/09/01 ver` for AUTOMATIC1111/stable-diffusion-webui 1.6.0
+* Setup memo : `2023/09/01 ver` for AUTOMATIC1111/stable-diffusion-webui 1.6.0 (for SDXL 1.0)
 * Video explaining in Japanese (Youtube) : https://www.youtube.com/watch?v=U4HrpzkinP4
 
 # Preparation
